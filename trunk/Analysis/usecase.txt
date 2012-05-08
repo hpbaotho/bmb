@@ -1,0 +1,95 @@
+
+Nhan vien
+	Le Tan
+	Bac Si
+	y ta
+	benh nhan
+	Admin	
+Ho so chung cua benh nhan
+	Ma benh nhan
+	Ten
+	Nam Sinh
+	Dia chi
+	Dien thoai
+So dieu tri
+	Ma benh nhan
+	Ngay kham
+	tien su benh an
+	Tinh trang benh: cho lan kham hien tai
+	Chan doan
+	Dieu tri
+Khoa
+	Noi khoa
+		Tim mach
+		Ho hap
+		Tieu hoa
+		Noi tiet
+		Co xuong khop
+		Di ung
+	Nhi khoa
+		Ho hap
+		Tieu hoa
+		Tai mui hong...
+	Ngoai khoa
+		Cac benh ngoai khoa
+	Sieu am
+		Tong quat
+		phu khoa
+	xet nghiem
+		Mau
+		Phat hien ung thu som
+	X-quang
+		
+	San phu khoa
+		Tu van, kham thai
+		Kham, dieu tri cac benh phu khoa
+	Cac dich vu khac
+		Kham suc khoe dinh ki
+		Kham suc khoe dich vu
+		Kham benh tai nha
+
+	
+Tong ket
+	Ten
+	Tong so lan kham
+	Lan kham cuoi
+	Ket qua dieu tri
+	Ngay tai kham	
+
+verbs:
+Quan ly
+Theo doi
+kham
+Thong ke
+
+Benh nhan den phong kham.
+le tan luu ho so benh nhan.
+bac si kham tong quat cho benh nhan.
+benh nhan vao cac khoa.
+	Noi khoa:
+		Bac si nghe tim, phoi
+		Bac si kiem tra tinh trang cac bo phan
+		chan doan benh
+		dua ra huong dieu tri
+bac si luu ho so cua benh nhan vao benh an
+
+
+                      
+Le tan quan ly ho so chung cua benh nhan
+Admin quan ly chung toan bo he thong
+Benh nhan co the xem so dieu tri va dat lich kham,
+Benh nhan cung co the dang ky cac dich vu.
+benh nhan den phong kham
+benh nhan gap le tan:
+	Neu la lan kham dau:thi cung cap thong tin va lay so kham benh
+	neu la di kham lai:thi dua so kham benh 
+benh nhan se duoc bac si kham tong quat
+benh nhan se den cac khoa lien quan
+
+benh nhan se gap bac si o cac khoa do
+benh nhan di xet nghiem ,sieu am,chup x-quang theo chi dan cua bac si
+benh nhan lay ket qua tu y ta
+benh nhan den gap bac si 
+bac si xem ket qua xet nghiem,sieu am,chup x-quang
+bac si dua ra chan doan va cach dieu tri 
+y ta se nhap du lieu ve benh nhan
