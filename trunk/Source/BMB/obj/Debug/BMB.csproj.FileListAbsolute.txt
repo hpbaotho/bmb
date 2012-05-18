@@ -1,0 +1,5 @@
+D:\Demo for K18\ASP.NET\BMB\BMB\obj\Debug\ResolveAssemblyReference.cache
+D:\Demo for K18\ASP.NET\BMB\BMB\bin\BMB.dll
+D:\Demo for K18\ASP.NET\BMB\BMB\bin\BMB.pdb
+D:\Demo for K18\ASP.NET\BMB\BMB\obj\Debug\BMB.dll
+D:\Demo for K18\ASP.NET\BMB\BMB\obj\Debug\BMB.pdb

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BMB.Entity.Member">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AiAAAAIAAAAAAAAAAACAAABAKAAAAAACAAAACAABAAA=</HashCode>
+      <FileName>Entity\Member.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BMB.Role">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAIABgAgAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Entity\Role.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BMB.Patient">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAJAAACAQAAAAAAAAAAAAAACAAAAAACAAAACAAAAAA=</HashCode>
+      <FileName>Entity\Patient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BMB.Faculty">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAIAAAQAA=</HashCode>
+      <FileName>Entity\Faculty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BMB.Doctor">
+    <Position X="0.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAABQAA=</HashCode>
+      <FileName>Entity\Doctor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BMB.MedicalBook">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAgAgAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\MedicalBook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BMB.MedicalHistory">
+    <Position X="7.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAEAAAAAAAAgABAAAAAABAAAAgAAAEABCBAAAAAAAAA=</HashCode>
+      <FileName>Entity\MedicalHistory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BMB.Nurse">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Entity\Nurse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BMB.Testing">
+    <Position X="0.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAwAgAAAAAABABABAAAAAAAABAAAQAAQBAEA=</HashCode>
+      <FileName>Entity\Testing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BMB.Treatment">
+    <Position X="4.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACABAAAAAwAgAJAAAAAARABAAAAAEAABABAAAAABAAA=</HashCode>
+      <FileName>Treatment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
