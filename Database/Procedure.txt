@@ -1,0 +1,282 @@
+
+create procedure prcRole_Select
+as
+select * from Role
+go 
+
+create procedure prcRole_SelectByID @RoleID int
+as
+select * from Role where RoleID=@RoleID
+go
+
+---------------------------------
+create procedure prcRole_Insert @Name nvarchar(100), @Des nvarchar(500)
+as
+insert into Role(Name, Description)
+values (@Name, @Des)
+go
+
+----------------------------------
+create procedure prcRole_Delete @RoleID int
+as 
+delete from Role where RoleID=@RoleID
+go
+
+----------------------------------
+create procedure preRole_UpdateName @RoleID int, @Name nvarchar(100)
+as
+update Role set Name=@Name where RoleID=@RoleID 
+go
+
+-----------------Members----------------------
+-----------------Select-----------------------
+create procedure prcMembers_Select
+as
+select * from Members
+go
+
+create procedure prcMembers_SelectByID @MemberID int
+as
+select * from Members where MemberID=@MemberID
+go
+
+-----------------Insert------------------------
+create procedure prcMembers_Insert @Name nvarchar(100), @DoB datetime, @Address nvarchar(300), @RoleID int
+as
+insert into Members(Name, DoB, Address, RoleID)
+values (@Name, @DoB, @Address, @RoleID)
+go
+
+-----------------Delete------------------------
+create procedure prcMembers_Delete @MemberID int
+as
+delete from Members where MemberID=@MemberID
+go
+
+-----------------Update------------------------
+create procedure prcMembers_UpdateAddress @MemberID int, @Address nvarchar(300), @RoleID int
+as
+update Members set Address=@Address where MemberID=@MemberID
+go
+
+-----------------Patient----------------------
+-----------------Select-----------------------
+create procedure prcPatient_Select
+as
+select * from Patient
+go
+
+create procedure prcPatient_SelectByID @PatientID int
+as
+select * from Patient where PatientID=@PatientID
+go
+
+-----------------Insert------------------------
+create procedure prcPatient_Insert @Name nvarchar(100), @DoB datetime, @Address nvarchar(300)
+as
+insert into Patient(Name, DoB, Address)
+values (@Name, @DoB, @Address)
+go
+
+-----------------Delete------------------------
+create procedure prcPatient_Delete @PatientID int
+as
+delete from Patient where PatientID=@PatientID
+go
+
+-----------------Update------------------------
+create procedure prcPatient_UpdateAddress @PatientID int, @Address nvarchar(300)
+as
+update Patient set Address=@Address where PatientID=@PatientID
+go
+
+-----------------Faculty----------------------
+-----------------Select-----------------------
+create procedure prcFaculty_Select
+as
+select * from Faculty
+go
+
+create procedure prcFaculty_SelectByID @FacID int
+as
+select * from Faculty where FacID=@FacID
+go
+
+-----------------Insert------------------------
+create procedure prcFaculty_Insert @Name nvarchar(100)
+as
+insert into Faculty(Name)
+values (@Name)
+go
+
+-----------------Delete------------------------
+create procedure prcFaculty_Delete @FacID int
+as
+delete from Faculty where FacID=@FacID
+go
+
+-----------------Update------------------------
+create procedure prcFaculty_UpdateFacultyName @FacID int, @Name nvarchar(100)
+as
+update Faculty set Name=@Name where FacID=@FacID
+go
+
+-----------------Doctor----------------------
+-----------------Select-----------------------
+create procedure prcDoctor_Select
+as
+select * from Doctor
+go
+
+create procedure prcDoctor_SelectByID @MemberID int
+as
+select * from Doctor where MemberID=@MemberID
+go
+
+-----------------Insert------------------------
+create procedure prcDoctor_Insert @FacID int
+as
+insert into Doctor(FacID)
+values (@FacID)
+go
+
+-----------------Delete------------------------
+create procedure prcDoctor_Delete @MemberID int
+as
+delete from Doctor where MemberID=@MemberID
+go
+
+-----------------Update------------------------
+create procedure prcDoctor_UpdateFacID @MemberID int,@FacID int
+as
+update Doctor set FacID=@FacID where MemberID=@MemberID
+go
+
+
+-----------------MedicalBook----------------------
+-----------------Select-----------------------
+create procedure prcMedicalBook_Select
+as
+select * from MedicalBook
+go
+
+create procedure prcMedicalBook_SelectByID @MedicalBookID int
+as
+select * from MedicalBook where MedicalBookID=@MedicalBookID
+go
+
+-----------------Insert------------------------
+create procedure prcMedicalBook_Insert @Description nvarchar(max)
+as
+insert into MedicalBook(Description)
+values (@Description)
+go
+
+-----------------Delete------------------------
+create procedure prcMedicalBook_Delete @MedicalBookID int
+as
+delete from MedicalBook where MedicalBookID=@MedicalBookID
+go
+
+-----------------Update------------------------
+create procedure prcMedicalBook_UpdateFacultyDescription @MedicalBookID int, @Description nvarchar(max)
+as
+update MedicalBook set Description=@Description where MedicalBookID=@MedicalBookID
+go
+
+-----------------MedicalHistory----------------------
+-----------------Select-----------------------
+create procedure prcMedicalHistory_Select
+as
+select * from MedicalHistory
+go
+
+create procedure prcMedicalHistory_SelectByID @MedicalHistoryID int
+as
+select * from MedicalHistory where MedicalHistoryID=@MedicalHistoryID
+go
+
+-----------------Insert------------------------
+create procedure prcMedicalHistory_Insert @ExamDate datetime, @DiseaseStatus nvarchar(max), @Diagnosis nvarchar(max), @MedicalBookID int
+as
+insert into MedicalHistory(ExamDate, DiseaseStatus, Diagnosis, MedicalBookID)
+values (@ExamDate, @DiseaseStatus, @Diagnosis, @MedicalBookID)
+go
+
+-----------------Delete------------------------
+create procedure prcMedicalHistory_Delete @MeicalHistoryID int
+as
+delete from MedicalHistory where MedicalHistoryID=@MeicalHistoryID
+go
+
+-----------------Update------------------------
+create procedure prcMedicalHistory_UpdateDiseaseStatus @MedicalHistoryID int, @DiseaseStatus nvarchar(max)
+as
+update MedicalHistory set DiseaseStatus=@DiseaseStatus where MedicalHistoryID=@MedicalHistoryID
+go
+
+create procedure prcMedicalHistory_UpdateDiagnosis @MedicalHistoryID int, @Diagnosis nvarchar(max)
+as
+update MedicalHistory set Diagnosis=@Diagnosis where MedicalHistoryID=@MedicalHistoryID
+go
+
+-----------------Testing----------------------
+-----------------Select-----------------------
+create procedure prcTesting_Select
+as
+select * from Testing
+go
+
+create procedure prcTesting_SelectByID @TestingID int
+as
+select * from Testing where TestingID=@TestingID
+go
+
+-----------------Insert------------------------
+create procedure prcTesting_Insert @MemberID int,@PatientID int, @TestingType nvarchar(200), @Date datetime, @Description nvarchar(max)
+as
+insert into Testing(MemberID, PatientID, TestingType, Date, Description)
+values (@MemberID, @PatientID, @TestingType, @Date, @Description)
+go
+
+-----------------Delete------------------------
+create procedure prcTesting_Delete @TestingID int
+as
+delete from Testing where TestingID=@TestingID
+go
+
+-----------------Update------------------------
+create procedure prcTesting_UpdateDescription @TestingID int, @Description nvarchar(max)
+as
+update Testing set Description=@Description where TestingID=@TestingID
+go
+
+-----------------Treatment----------------------
+-----------------Select-----------------------
+create procedure prcTreatment_Select
+as
+select * from Treatment
+go
+
+create procedure prcTreatment_SelectByID @TreatmentID int
+as
+select * from Treatment where TreatmentID=@TreatmentID
+go
+
+-----------------Insert------------------------
+create procedure prcTreatment_Insert @MemberID int, @PatientID int, @Date datetime, @ExamDetails nvarchar(max), @Diagnosis nvarchar(max), @Description nvarchar(max)
+as
+insert into Treatment(MemberID , PatientID, Date, ExamDetails, Diagnosis, Description)
+values (@MemberID , @PatientID, @Date, @ExamDetails, @Diagnosis, @Description)
+go
+
+-----------------Delete------------------------
+create procedure prcTreatment_Delete @TreatmentID int
+as
+delete from Treatment where TreatmentID=@TreatmentID
+go
+
+-----------------Update------------------------
+create procedure prcTreatment_UpdateDescription @TreatmentID int, @Description nvarchar(max)
+as
+update Treatment set Description=@Description where TreatmentID=@TreatmentID
